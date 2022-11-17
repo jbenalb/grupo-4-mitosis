@@ -95,12 +95,15 @@ function crea_lista($vector) {
 }
 
 //*************EJERCICIO 9 **************
-function definicines($vector) {
+function definiciones($vector) {
     $tipo = "";
     for ($i=0; $i<count($vector);$i++) {
         $vector[$i]= enlace($vector, $vector, $tipo);
     }
-    crea_lista($vector);
+    foreach($vector as $valor -> $i) {
+        crea_lista($vector[$i]);
+    }
+
 }
 
 ?>
