@@ -98,7 +98,7 @@ function crea_lista($vector) {
 function definiciones($vector) {
     $tipo = "";
     for ($i=0; $i<count($vector);$i++) {
-        $vector[$i]= enlace($vector, $vector, $tipo);
+        $vector[$i]= enlace($vector[$i], $vector[$i], $tipo);
     }
     foreach($vector as $valor -> $i) {
         crea_lista($vector[$i]);
