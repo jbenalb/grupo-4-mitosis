@@ -106,4 +106,16 @@ function definiciones($vector) {
 
 }
 
+//*************EJERCICIO 11 **************
+function ejercicio11($array_asoc,$tip_titulo)
+{
+    foreach ($array_asoc as $item => $value) { //item=indice del array y value el valor de la posicion del array
+        $enlace = "https://dle.rae.es/$item";
+        $titulo = "h$tip_titulo";
+
+        echo "<$titulo>$item</$titulo>";
+        echo "<p>$value</p>";
+        echo "<a href=$enlace>Ver definición de perro en RAE</a>";
+    }
+}
 ?>
