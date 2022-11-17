@@ -97,7 +97,7 @@ function crea_lista($vector) {
 //*************EJERCICIO 9 **************
 function definicines($vector) {
     $tipo = "";
-    for ($i=0; $i<count($vector);$++) {
+    for ($i=0; $i<count($vector);$i++) {
         $vector[$i]= enlace($vector, $vector, $tipo);
     }
     crea_lista($vector);
